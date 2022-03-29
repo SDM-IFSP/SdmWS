@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.MainActivity">
+
+    <TextView
+        android:id="@+id/cursoTv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Hello World!"
+        android:lines="6"
+        android:maxLines="6"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/semetreLabelTv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Semestre"
+        android:gravity="center_horizontal"
+        android:textSize="20sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/cursoTv" />
+
+    <Spinner
+        android:id="@+id/semestreSp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/semetreLabelTv" />
+
+    <TextView
+        android:id="@+id/siglasLabelTv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Disciplinas"
+        android:gravity="center_horizontal"
+        android:textSize="20sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/semestreSp" />
+
+    <Spinner
+        android:id="@+id/siglasSp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/siglasLabelTv" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
